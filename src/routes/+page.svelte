@@ -68,7 +68,7 @@
 			>Learn More About Interactive Reports <ArrowRight /></a
 		>
 	</div>
-	<div class="h-[300px] w-[300px] black">
+	<div class="h-[300px] w-[300px] flex-shrink-0">
 		<div class="border-4 rounded-3xl border-orange-500 p-8 h-full">
 			<div class="border-4 rounded-3xl border-orange-500 p-8 h-full">
 				<div class="border-4 rounded-3xl border-orange-500 p-8 h-full">
@@ -133,7 +133,7 @@
 		</Observer>
 	</div>
 
-	<div class="relative">
+	<div class="relative ">
 		<ImagePlaceholder
 			class={cn(
 				"sticky top-[20vh] bg-yellow-100 h-[500px] w-[850px] transition-opacity duration-700 ",
@@ -142,8 +142,9 @@
 		>
 		<ImagePlaceholder
 			class={cn(
-				"fixed top-[20vh] bg-indigo-100  h-[500px] w-[850px] transition-opacity duration-700",
-				intersecting2 || "opacity-0  "
+				"sticky top-[20vh] bg-indigo-100  h-[500px] w-[850px] transition-opacity duration-700",
+				intersecting2 || "opacity-0  ",
+				(intersecting1 || intersecting2 || intersecting3) && "fixed"
 			)}>FUNNELS REPORT</ImagePlaceholder
 		>
 		<ImagePlaceholder
@@ -152,5 +153,61 @@
 				intersecting3 || "opacity-0"
 			)}>RETENTION REPORT</ImagePlaceholder
 		>
+	</div>
+</section>
+
+<section class="max-w-7xl mx-auto mt-[100px] flex gap-10">
+	<div class="flex flex-col gap-6">
+		<h4 class="font-bold">EXPLORE</h4>
+		<h2 class="text-6xl font-semibold tracking-wide">
+			<span class="text-green-500">Simple</span> workflows to get answers fast
+		</h2>
+		<p>
+			Build funnels, see top user flows, create cohorts, and more with
+			just a few clicks. No need to invest hours writing SQL or waiting on
+			someone to do it for you.
+		</p>
+		<a href="#" class="flex items-center gap-2"
+			>Try it with sample data <ArrowRight /></a
+		>
+	</div>
+	<div class="h-[300px] w-[300px] flex-shrink-0">
+		<div class="border-4 rounded-full border-green-500 p-8 h-full">
+			<div class="border-4 rounded-full border-green-500 p-8 h-full">
+				<div class="border-4 rounded-full border-green-500 p-8 h-full">
+					<div
+						class="border-4 rounded-full border-green-500 p-8 h-full"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="max-w-7xl mx-auto mt-[100px] flex gap-10">
+	<div class="flex flex-col gap-6">
+		<h4 class="font-bold">Integrate</h4>
+		<h2 class="text-6xl font-semibold tracking-wide">
+			<span class="text-yellow-500">Connect</span> to your data lake
+		</h2>
+		<p>
+			Build funnels, see top user flows, create cohorts, and more with
+			just a few clicks. No need to invest hours writing SQL or waiting on
+			someone to do it for you.
+		</p>
+		<a href="#" class="flex items-center gap-2"
+			>Try it with sample data <ArrowRight /></a
+		>
+	</div>
+	<div class="h-[300px] w-[300px] flex-shrink-0">
+		<div class="border-4 rounded-3xl border-yellow-500 p-8 h-full">
+			<div class="border-4 rounded-3xl border-yellow-500 p-8 h-full">
+				<div class="border-4 rounded-3xl border-yellow-500 p-8 h-full">
+					<div
+						class="border-4 rounded-3xl border-yellow-500 p-8 h-full"
+					/>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
