@@ -34,7 +34,7 @@
 	</div>
 </section>
 <section class="max-w-7xl mx-auto mt-24">
-	<ImagePlaceholder class="h-[520px]" />
+	<ImagePlaceholder class="h-[520px] bg-gray-400" />
 </section>
 
 <section
