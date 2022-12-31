@@ -2,19 +2,45 @@
 	// import { page } from "$app/stores";
 	// import logo from "$lib/images/svelte-logo.svg";
 	// import github from "$lib/images/github.svg";
+	import cn from "classnames";
+	import Globe from "$lib/icons/globe.svelte";
+	const underlineAfter =
+		"after:origin-center relative  after:absolute after:h-[2px] after:inset-0 after:top-auto after:-bottom-1 after:transition-all after:scale-0 after:hover:scale-100";
 </script>
 
-<header class="top-0 left-0 right-0 fixed">
+<header class="top-0 left-0 right-0 fixed max-w-7xl mx-auto z-50">
 	<nav
-		class="border-l border-t items-center border-gray-500  shadow-black shadow-md mx-6 bg-dark rounded-lg text-white mt-4 py-4 px-4 flex justify-between"
+		class="border-l border-t items-center border-gray-500  shadow-black shadow-md  bg-dark rounded-lg text-white mt-4 py-4 px-4 flex justify-between"
 	>
 		<a href="/" class="text-2xl">Pastel</a>
-		<a href="#">Why Pastel</a>
-		<a href="#">Solutions</a>
-		<a href="#">Resrouces</a>
-		<a href="#">Pricing</a>
-		<div class="border-l  border-yellow-500 h-8" />
-		<a href="#">Log in</a>
-		<a href="#" class="px-6 py-3 bg-indigo-500 rounded-md">Sign Up</a>
+		<div class="group grid grid-flow-col gap-4 text-xl font-light">
+			<a href="/why" class={underlineAfter + " after:bg-indigo-500 "}
+				>Why Pastel</a
+			>
+			<a
+				href="/solutions"
+				class={underlineAfter + " after:bg-orange-500 "}>Solutions</a
+			>
+			<a href="/resources" class={underlineAfter + " after:bg-green-500 "}
+				>Resources</a
+			>
+			<a href="/pricing" class={underlineAfter + " after:bg-yellow-500 "}
+				>Pricing</a
+			>
+		</div>
+		<div class="flex items-center gap-4 text-sm">
+			<Globe />
+			<div class="border-l  border-yellow-500 rounded-md h-8" />
+			<a href="/sales" class={underlineAfter + " after:bg-white"}
+				>Contact Sales</a
+			>
+			<a href="/login" class={underlineAfter + " after:bg-white"}
+				>Log in</a
+			>
+			<a
+				href="/signup"
+				class="text-base px-6 py-3 bg-indigo-500 rounded-md">Sign Up</a
+			>
+		</div>
 	</nav>
 </header>
