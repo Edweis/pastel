@@ -3,7 +3,6 @@
   import Observer from "$lib/components/Observer.svelte";
   import Bulb from "$lib/icons/bulb.svelte";
   import CheckCircle from "$lib/icons/check-circle.svelte";
-  import ArrowRight from "$lib/icons/right-arrow.svelte";
   import cn from "classnames";
 
   let intersecting1 = false;
@@ -52,11 +51,11 @@
     <li>Expedia</li>
     <li>ZipRecruiter</li>
   </ul>
-  <div class="flex items-center gap-2">Meet Our Customers -></div>
+  <div class="text-link">Meet Our Customers</div>
 </section>
 <section class="mx-auto mt-[100px] flex max-w-7xl gap-10">
   <div class="flex flex-col gap-6">
-    <h4 class="font-bold">UNDERSTAND</h4>
+    <p class="text-muted">UNDERSTAND</p>
     <h2 class="text-6xl font-semibold tracking-wide">
       <span class="text-orange-500">Powerful</span> reports to answer any question
     </h2>
@@ -65,9 +64,7 @@
       surface to learn which features are popular, who you power users are, and
       the behaviors tied to long-term retention.
     </p>
-    <a href="#" class="flex items-center gap-2"
-      >Learn More About Interactive Reports <ArrowRight /></a
-    >
+    <a href="#" class="text-link">Learn More About Interactive Reports</a>
   </div>
   <div class="h-[300px] w-[300px] flex-shrink-0">
     <div class="h-full rounded-3xl border-4 border-orange-500 p-8">
@@ -89,7 +86,7 @@
     >
       <h4 class="flex items-center gap-4 font-bold ">
         <Bulb className="bg-orange-500 p-2 h-10 w-10 rounded-md" />
-        <span>INSIGHTS REPORT</span>
+        <span class="text-muted">INSIGHTS REPORT</span>
       </h4>
       <h2 class="text-5xl font-semibold tracking-wide">
         How is my product used?
@@ -103,7 +100,7 @@
     >
       <h4 class="flex items-center gap-4 font-bold ">
         <Bulb className="bg-orange-500 p-2 h-10 w-10 rounded-md" />
-        <span>FUNNELS REPORT</span>
+        <span class="text-muted">FUNNELS REPORT</span>
       </h4>
       <h2 class="text-5xl font-semibold tracking-wide">
         Where and why do users drop off?
@@ -117,7 +114,7 @@
     >
       <h4 class="flex items-center gap-4 font-bold ">
         <Bulb className="bg-orange-500 p-2 h-10 w-10 rounded-md" />
-        <span>RETENTION REPORT</span>
+        <span class="text-muted">RETENTION REPORT</span>
       </h4>
       <h2 class="text-5xl font-semibold tracking-wide">
         Which users retain best?
@@ -151,7 +148,7 @@
 
 <section class="mx-auto mt-[100px] flex max-w-7xl gap-10">
   <div class="flex flex-col gap-6">
-    <h4 class="font-bold">EXPLORE</h4>
+    <p class="text-muted">EXPLORE</p>
     <h2 class="text-6xl font-semibold tracking-wide">
       <span class="text-green-500">Simple</span> workflows to get answers fast
     </h2>
@@ -160,9 +157,7 @@
       few clicks. No need to invest hours writing SQL or waiting on someone to
       do it for you.
     </p>
-    <a href="#" class="flex items-center gap-2"
-      >Try it with sample data <ArrowRight /></a
-    >
+    <a href="#" class="text-link">Try it with sample data</a>
   </div>
   <div class="h-[300px] w-[300px] flex-shrink-0">
     <div class="h-full rounded-full border-4 border-green-500 p-8">
@@ -177,7 +172,7 @@
 
 <section class="mx-auto mt-[100px] flex max-w-7xl gap-10">
   <div class="flex flex-col gap-6">
-    <h4 class="font-bold">Integrate</h4>
+    <p class="text-muted">Integrate</p>
     <h2 class="text-6xl font-semibold tracking-wide">
       <span class="text-yellow-500">Connect</span> to your data lake
     </h2>
@@ -186,9 +181,7 @@
       few clicks. No need to invest hours writing SQL or waiting on someone to
       do it for you.
     </p>
-    <a href="#" class="flex items-center gap-2"
-      >Try it with sample data <ArrowRight /></a
-    >
+    <a href="#" class="text-link">Try it with sample data</a>
   </div>
   <div class="h-[300px] w-[300px] flex-shrink-0">
     <div class="h-full rounded-3xl border-4 border-yellow-500 p-8">
@@ -216,5 +209,49 @@
       class="rounded-md bg-indigo-500 px-8 py-4 transition-all hover:bg-indigo-300"
       >Get Started</a
     >
+  </div>
+</section>
+<section class=" bg-indigo-500 ">
+  <div class="mx-auto flex max-w-6xl gap-8 py-32">
+    <div>
+      <p class="text-muted">Customer Story</p>
+
+      <h2 class="text-6xl font-semibold tracking-wide">
+        Lemonade is defining the modern insurance industry
+      </h2>
+      <ul class="ml-4 list-disc">
+        <li>Customer-first experience: 4.9 star app</li>
+        <li>Data-informed decisions: 95% of employees use analytics</li>
+        <li>
+          Business results: 500% increase in policy holders, IPO five years
+          after founding
+        </li>
+      </ul>
+      <a href="#" class="text-link text-white hover:text-gray-500"
+        >Meet Our Customers</a
+      >
+    </div>
+    <ImagePlaceholder
+      class="h-[546px] w-[264px] flex-shrink-0 rounded-2xl border-0 bg-white ring-8 ring-black"
+      >iPhone screenshot</ImagePlaceholder
+    >
+    <div class="my-auto">
+      <span>Lemonade</span>
+      <p class="font-thin">
+        “I've used Mixpanel at many companies before—it's the go-to solution
+        when you need user and product analytics.”
+      </p>
+      <div class="flex gap-4">
+        <img
+          class="h-20 w-20 rounded-full border-4 border-white"
+          alt="profile"
+          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        />
+        <div class="flex flex-col justify-center">
+          <span class="text-xl font-bold">Thomas Sidos</span>
+          <span class="font-thin">Head of Product</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

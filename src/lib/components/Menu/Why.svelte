@@ -7,9 +7,7 @@
 
 <Panel class={className}>
   <div>
-    <div class="mb-8  font-mono font-bold tracking-wider">
-      POWERFUL, SIMPLE ANALYTICS
-    </div>
+    <div class="text-muted mb-8">powerful, SIMPLE ANALYTICS</div>
     <ol class="grid gap-8">
       <li class="flex">
         <Lifebuoy className="h-8 mr-4 text-indigo-500" />
@@ -45,9 +43,7 @@
     </ol>
   </div>
   <div>
-    <div class="mb-8  font-mono font-bold tracking-wider">
-      TOOLS FOR TRUSTED DATA
-    </div>
+    <div class="text-muted  mb-8">TOOLS FOR TRUSTED DATA</div>
     <ol class="grid gap-8">
       <li class="flex">
         <Lifebuoy className="h-8 mr-4 text-indigo-500" />
@@ -83,7 +79,7 @@
     </ol>
   </div>
   <div>
-    <div class="mb-8  font-mono font-bold tracking-wider">MORE</div>
+    <div class="text-muted  mb-8">MORE</div>
     <ol class="grid gap-8">
       <li class="flex">
         <Lifebuoy className="h-8 mr-4 text-indigo-500" />

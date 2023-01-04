@@ -7,7 +7,7 @@
 
 <Panel class={className}>
   <div>
-    <div class="mb-8  font-mono font-bold tracking-wider">USING MIXPANEL</div>
+    <div class="text-muted  mb-8">USING MIXPANEL</div>
     <ol class="grid gap-8">
       <li class="flex">
         <Lifebuoy className="h-8 mr-4 text-green-500" />
@@ -30,7 +30,7 @@
     </ol>
   </div>
   <div>
-    <div class="mb-8  font-mono font-bold tracking-wider">BEST PRACTICES</div>
+    <div class="text-muted  mb-8">BEST PRACTICES</div>
     <ol class="grid gap-8">
       <li class="flex">
         <Lifebuoy className="h-8 mr-4 text-green-500" />
@@ -54,7 +54,7 @@
     </ol>
   </div>
   <div>
-    <div class="mb-8  font-mono font-bold tracking-wider">MORE</div>
+    <div class="text-muted mb-8">MORE</div>
     <ol class="grid gap-8">
       <li class="flex">
         <Lifebuoy className="h-8 mr-4 text-green-500" />
