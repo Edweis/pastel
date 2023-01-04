@@ -2,6 +2,7 @@
   import ImagePlaceholder from "$lib/components/ImagePlaceholder.svelte";
   import Observer from "$lib/components/Observer.svelte";
   import Bulb from "$lib/icons/bulb.svelte";
+  import CheckCircle from "$lib/icons/check-circle.svelte";
   import ArrowRight from "$lib/icons/right-arrow.svelte";
   import cn from "classnames";
 
@@ -197,5 +198,23 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="mx-auto max-w-md text-center text-6xl font-semibold tracking-wide">
+    What will your data teach you?
+  </h2>
+  <ul class="mt-20 flex justify-center gap-14">
+    <li class="flex gap-2"><CheckCircle />Measure what matters</li>
+    <li class="flex gap-2"><CheckCircle />Analyze usage trends</li>
+    <li class="flex gap-2"><CheckCircle />Answer your questions</li>
+  </ul>
+  <div class="my-24 text-center">
+    <a
+      href="#"
+      class="rounded-md bg-indigo-500 px-8 py-4 transition-all hover:bg-indigo-300"
+      >Get Started</a
+    >
   </div>
 </section>
