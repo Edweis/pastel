@@ -19,7 +19,7 @@
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div class="relative z-20 bg-dark">
+<div class="relative bg-dark">
   <section id="hero" class="flex flex-col gap-8 pt-[190px] text-center">
     <h1 class="text-8xl font-semibold tracking-wide">Build Better Products</h1>
     <h2 class="mx-16 text-2xl">
@@ -223,7 +223,7 @@
 <div class="static h-screen" />
 
 <section
-  class="fixed inset-0 z-10 flex min-h-screen items-end bg-indigo-500"
+  class="fixed inset-0 -z-10 flex min-h-screen items-end bg-indigo-500"
   bind:clientHeight={useCaseSectionHeight}
 >
   <div class="mx-auto   mt-auto grid max-w-6xl grid-cols-4 gap-8 pb-16">
@@ -276,7 +276,7 @@
   </div>
 </section>
 
-<div class="relative z-20 bg-white text-dark">
+<div class="relative bg-white text-dark">
   <section class="mx-auto mt-[100px] grid  max-w-7xl gap-10 py-32">
     <div class="flex justify-between">
       <h2 class="text-5xl font-bold">Resources for growing your product</h2>

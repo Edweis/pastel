@@ -1,4 +1,5 @@
 <script>
+  import Footer from "./Footer.svelte";
   import Header from "./Header.svelte";
   import "./styles.scss";
 </script>
@@ -8,11 +9,7 @@
   <main>
     <slot />
   </main>
-  <footer>
-    <p class="bg-blue-400">
-      visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit
-    </p>
-  </footer>
+  <Footer />
 </div>
 
 <style>
