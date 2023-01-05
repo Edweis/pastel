@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Pastel: Product Analytics for Mobile, Web, and More</title>
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
