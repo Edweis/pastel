@@ -219,11 +219,12 @@
   </section>
 </div>
 <div class="static h-screen" />
+
 <section
-  class="fixed inset-0 z-10 min-h-screen bg-indigo-500"
+  class="fixed inset-0 z-10 flex min-h-screen items-end bg-indigo-500"
   bind:clientHeight={useCaseSectionHeight}
 >
-  <div class="mx-auto grid max-w-6xl grid-cols-4 gap-8 py-32">
+  <div class="mx-auto   mt-auto grid max-w-6xl grid-cols-4 gap-8 pb-16">
     <div class="col-span-2 grid">
       <p class="text-muted">Customer Story</p>
 
