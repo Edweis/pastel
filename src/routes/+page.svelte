@@ -1,8 +1,10 @@
 <script lang="ts">
   import ImagePlaceholder from "$lib/components/ImagePlaceholder.svelte";
   import Observer from "$lib/components/Observer.svelte";
+  import Book from "$lib/icons/book.svelte";
   import Bulb from "$lib/icons/bulb.svelte";
   import CheckCircle from "$lib/icons/check-circle.svelte";
+  import classNames from "classnames";
   import cn from "classnames";
 
   let intersecting1 = false;
@@ -273,3 +275,38 @@
     </div>
   </div>
 </section>
+
+<div class="relative z-20 bg-white text-dark">
+  <section class="mx-auto mt-[100px] grid  max-w-7xl gap-10 py-32">
+    <div class="flex justify-between">
+      <h2 class="text-5xl font-bold">Resources for growing your product</h2>
+      <a href="#" class="text-link text-indigo-500">View ressources</a>
+    </div>
+    <div class="grid grid-cols-3 gap-6">
+      <article class="grid gap-4">
+        <ImagePlaceholder class="h-[200px] bg-gray-400" />
+        <span class="text-muted flex gap-2">
+          <Book /> Book
+        </span>
+        <p class="text-4xl font-semibold">The guide to product analytics</p>
+        <a href="#" class="text-link   text-indigo-500">Check out the book</a>
+      </article>
+      <article class="grid gap-4">
+        <ImagePlaceholder class="h-[200px] bg-gray-400" />
+        <span class="text-muted flex gap-2">
+          <Book /> Blog
+        </span>
+        <p class="text-4xl font-semibold">A primer on product metrics</p>
+        <a href="#" class="text-link   text-indigo-500">Read article</a>
+      </article>
+      <article class="grid gap-4">
+        <ImagePlaceholder class="h-[200px] bg-gray-400" />
+        <span class="text-muted flex gap-2">
+          <Book /> Webinar
+        </span>
+        <p class="text-4xl font-semibold">The state of product analytics</p>
+        <a href="#" class="text-link   text-indigo-500">Watch Webinar</a>
+      </article>
+    </div>
+  </section>
+</div>

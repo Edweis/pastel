@@ -9,6 +9,6 @@
   }
 
   .text-link {
-    @apply cursor-pointer   flex items-center gap-2 font-semibold text-gray-400 hover:text-white transition-colors;
+    @apply cursor-pointer flex items-center gap-2 font-semibold text-gray-400 hover:opacity-50 transition-colors;
   }
 }
