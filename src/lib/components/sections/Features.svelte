@@ -8,7 +8,7 @@
   let intersecting3 = false;
 </script>
 
-<section class="mx-auto mt-[100px] flex max-w-7xl gap-10">
+<section class="mx-auto flex max-w-7xl gap-10 pt-[100px]">
   <div class="flex h-[1500px] flex-col justify-around">
     <Observer
       class="flex flex-col gap-4"

@@ -3,8 +3,8 @@
   import ImagePlaceholder from "../ImagePlaceholder.svelte";
 </script>
 
-<div class="relative bg-white text-dark">
-  <section class="mx-auto mt-[100px] grid  max-w-7xl gap-10 py-32">
+<div class="relative bg-white pt-[100px] text-dark">
+  <section class="mx-auto grid  max-w-7xl gap-10 py-32">
     <div class="flex justify-between">
       <h2 class="text-5xl font-bold">Resources for growing your product</h2>
       <a href="#" class="text-link text-indigo-500">View resources</a>
