@@ -1,13 +1,10 @@
 <script lang="ts">
-  import ImagePlaceholder from "$lib/components/ImagePlaceholder.svelte";
-  import Observer from "$lib/components/Observer.svelte";
   import Explore from "$lib/components/sections/Explore.svelte";
   import Features from "$lib/components/sections/Features.svelte";
   import Hero from "$lib/components/sections/Hero.svelte";
   import TrustedBy from "$lib/components/sections/TrustedBy.svelte";
   import WhatWillData from "$lib/components/sections/WhatWillData.svelte";
   import Understand from "$lib/components/sections/Understand.svelte";
-  import Book from "$lib/icons/book.svelte";
   import UseCase from "$lib/components/sections/UseCase.svelte";
   import Growing from "$lib/components/sections/Growing.svelte";
 </script>
