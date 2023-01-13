@@ -1,12 +1,11 @@
 <script>
-  // import { page } from "$app/stores";
-  // import logo from "$lib/images/svelte-logo.svg";
-  // import github from "$lib/images/github.svg";
   import cn from "classnames";
   import Globe from "$lib/icons/globe.svelte";
   import MenuWhy from "$lib/components/Menu/Why.svelte";
   import MenuSolutions from "$lib/components/Menu/Solutions.svelte";
   import MenuResources from "$lib/components/Menu/Resources.svelte";
+  import { menu } from "./menu";
+  import SubHeaderDesktop from "./SubHeaderDesktop.svelte";
   let scrollY = 0;
   const underlineAfter =
     "transition-colors ease-out group-hover:text-white after:origin-center relative  after:absolute after:h-[2px] after:inset-0 after:top-auto after:-bottom-1 after:transition-transform after:scale-0 after:hover:scale-100 after:group-hover:scale-100";
@@ -22,30 +21,17 @@
   >
     <a href="/" class="text-2xl">Pastel</a>
     <ul class="grid grid-flow-col gap-4 text-xl font-light hover:text-gray-500">
-      <li class="group">
-        <a href="/why" class={underlineAfter + " after:bg-indigo-500 "}
-          >Why Pastel</a
-        >
-        <MenuWhy class="hover:visible group-hover:visible" />
-      </li>
-      <li class="group">
-        <a href="/solutions" class={underlineAfter + " after:bg-orange-500 "}
-          >Solutions</a
-        >
-        <MenuSolutions class="hover:visible group-hover:visible" />
-      </li>
-      <li class="group">
-        <a href="/resources" class={underlineAfter + " after:bg-green-500 "}
-          >Resources</a
-        >
-        <MenuResources class="hover:visible group-hover:visible" />
-      </li>
-      <li class="group">
-        <a href="/pricing" class={underlineAfter + " after:bg-yellow-500 "}
-          >Pricing</a
-        >
-        <!-- <MenuPricing /> -->
-      </li>
+      {#each menu as { href, style, title, categories }}
+        <li class="group">
+          <a {href} class={cn(underlineAfter, style)}>{title}</a>
+          {#if categories}
+            <SubHeaderDesktop
+              class="hover:visible group-hover:visible"
+              {categories}
+            />
+          {/if}
+        </li>
+      {/each}
     </ul>
     <div class="flex items-center gap-4 text-sm">
       <Globe />
